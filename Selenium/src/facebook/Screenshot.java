@@ -1,7 +1,10 @@
-package practice;
+package facebook;
+
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 
 import org.openqa.selenium.OutputType;
@@ -10,14 +13,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 
-public class screenshot {
-	
-	
-	
-	
-	
-	
-	
+
+public class Screenshot {
+
 	public static void main(String[] args) throws IOException {
 		
 		
@@ -37,7 +35,7 @@ public class screenshot {
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		
 		
-		File dest = new File ("E:\\tackScreshot\\image"+FileName+".jpg");
+		File dest = new File ("E:\\pawan\\image"+FileName+".jpg");
 		FileHandler.copy(source, dest);
 	
 		
